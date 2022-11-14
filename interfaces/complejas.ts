@@ -4,6 +4,7 @@
         name : string;
         age ?: number;
         address : Address;
+        getFullAddress(id : string) :void;
     }
 
     interface Address {
@@ -18,6 +19,9 @@
             id: 125,
             zip : 'ky2 sud',
             city : 'santiago'
+        },
+        getFullAddress(id :string) {
+            return this.address.city
         }
     }
 
@@ -28,6 +32,9 @@
             id :111,
             zip : 'ky3 sud',
             city : 'santiago2'
+        },
+        getFullAddress(id :string) {
+            return this.address.city
         }
     }
 
